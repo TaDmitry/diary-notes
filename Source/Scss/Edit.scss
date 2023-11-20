@@ -1,0 +1,11 @@
+body.edit {
+	.container-form {
+		grid-template-columns: 1fr;
+	}
+}
+
+.form-button,
+.form-textarea,
+.form-input {
+	width: 100%;
+}

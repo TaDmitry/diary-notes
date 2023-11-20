@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Дневник дел</title>
+		<link rel="apple-touch-icon" sizes="57x57" href="./Source/Img/Favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="./Source/Img/Favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="./Source/Img/Favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="./Source/Img/Favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="./Source/Img/Favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="./Source/Img/Favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="./Source/Img/Favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="./Source/Img/Favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./Source/Img/Favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./Source/Img/Favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./Source/Img/Favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="./Source/Img/Favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./Source/Img/Favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./Source/Img/Favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="./Source/Img/Favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="stylesheet" href="./Css/Style.css" />
+	</head>
+
+	<body class="index">
+		<header>
+			<nav class="container">
+				<ul class="header-ul">
+					<li class="header-li__logo">Лого</li>
+					<li class="header-li__login">Войти</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="wrapper">
+				<span class="icon-close">
+					<i class="fa-solid fa-xmark"></i>
+				</span>
+
+				<div class="form-box login">
+					<h2>Вход</h2>
+					<form action="./Components/аuthorizations/login.php" method="post">
+						<div class="input-box">
+							<span><i class="fa-solid fa-envelope"></i></span>
+							<input type="text" name="login" required />
+							<label>Username:</label>
+						</div>
+						<div class="input-box">
+							<span><i class="fa-solid fa-lock"></i></span>
+							<input type="password" name="password" required />
+							<label>Password:</label>
+						</div>
+						<div class="remember-forgot">
+							<label><input type="checkbox" />Запомни меня</label>
+							<a href="#">Забыл пароль?</a>
+						</div>
+						<button type="submit" class="form-login__button">Войти</button>
+						<div class="login-register">
+							<p>У вас нет учетной записи?<a href="#" class="register-link">Зарегистрироваться</a></p>
+						</div>
+					</form>
+				</div>
+
+				<div class="form-box register">
+					<h2>Регистрация</h2>
+					<form action="./Components/аuthorizations/register.php" method="post">
+						<div class="input-box">
+							<span><i class="fa-solid fa-user"></i></span>
+							<input type="text" name="login" required />
+							<label>Username:</label>
+						</div>
+						<div class="input-box">
+							<span><i class="fa-solid fa-envelope"></i></span>
+							<input type="email" name="email" required />
+							<label>Email:</label>
+						</div>
+						<div class="input-box">
+							<span><i class="fa-solid fa-lock"></i></span>
+							<input type="password" name="password" required />
+							<label>Password:</label>
+						</div>
+						<div class="remember-forgot">
+							<label><input type="checkbox" required />Я принимаю пользовательское соглашение</label>
+						</div>
+						<button type="submit" class="form-login__button">Зарегистрироваться</button>
+						<div class="login-register">
+							<p>У вас уже есть учетная запись?<a href="#" class="login-link">Войти</a></p>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<script src="./JS/RegistrationAndAuthorization-dist.js"></script>
+		<script src="https://kit.fontawesome.com/c5747cb861.js" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+
+
+	&::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #ff5900;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #9b3600;
+		border-radius: 10px;
+		border: 2px solid #9b3600;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: rgb(0, 0, 0);
+	}
+}
+
+@font-face {
+	font-family: "Caveat";
+	font-weight: 400;
+	font-style: normal;
+	src: url(../Source/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Caveat";
+	font-weight: 500;
+	font-style: normal;
+	src: url(../Source/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+	font-family: "Caveat";
+	font-weight: 600;
+	font-style: normal;
+	src: url(../Source/fonts/Caveat-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: "Caveat";
+	font-weight: 700;
+	font-style: normal;
+	src: url(../Source/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Lobster-Regular";
+	font-weight: 400;
+	font-style: normal;
+	src: url(../Source/fonts/Lobster-Regular.ttf);
+}
